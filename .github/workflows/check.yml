@@ -1,0 +1,57 @@
+name: 体育館空き状況チェック
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: gym-availability-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: 依存関係インストール(Playwright同梱ブラウザも取得)
+        run: npm ci
+
+      # data/state (前回結果・週次キャッシュ) を実行間で引き継ぐ。
+      # 完全一致キーは使わず run_id で毎回新規保存し、直前の内容を restore-keys で復元する。
+      - name: 状態データの復元
+        uses: actions/cache/restore@v4
+        with:
+          path: data/state
+          key: gym-state-${{ github.run_id }}
+          restore-keys: |
+            gym-state-
+
+      - name: チェック実行
+        env:
+          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+          LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
+        run: npm start
+
+      - name: 状態データの保存
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/state
+          key: gym-state-${{ github.run_id }}
+
+      - name: ログをアーティファクトとして保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.run_id }}
+          path: logs/
+          retention-days: 7
+          if-no-files-found: ignore
