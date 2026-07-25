@@ -2,7 +2,7 @@ import "dotenv/config";
 import dayjs from "dayjs";
 import { cleanOldLogs, writeLog } from "./lib/logger.js";
 import { sendLineMessage } from "./lib/line.js";
-import { shouldNotify, saveLastResults } from "./lib/state.js";
+import { loadLastResults, saveLastResults } from "./lib/state.js";
 import { loadDashboardData, writeDashboardData } from "./lib/dashboard.js";
 import { sites } from "./config/sites.js";
 import { checkSite as checkOkegawa } from "./sites/okegawa.js";
@@ -10,36 +10,70 @@ import { checkSite as checkHasuda } from "./sites/hasuda.js";
 import { checkSite as checkAgeo } from "./sites/ageo.js";
 
 const adapters = { okegawa: checkOkegawa, hasuda: checkHasuda, ageo: checkAgeo };
+const DASHBOARD_URL = "https://egovo.github.io/GymAvailabilityMonitoringSystem/";
 
 // 週境界の再訪問等で同じ枠が複数回検出されることがあるため、通知・ダッシュボードに出す前に重複を除く
 function dedupeResults(results) {
   const seen = new Set();
   return results.filter(r => {
-    const key = `${r.facilityName}|${r.roomName}|${r.date}|${r.timeStart}|${r.timeEnd}`;
+    const key = resultKey(r);
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
 }
 
-function buildMessage(siteName, results) {
-  let msg = `🏀 ${siteName} 空き情報 🏀\n`;
-
-  const byDate = {};
-  results.forEach(r => {
-    byDate[r.date] = byDate[r.date] || [];
-    byDate[r.date].push(r);
+// 開始・終了時刻(HH:MM)から空き枠の長さ(分)を計算し、ダッシュボードのフィルタ用に持たせる
+function withDuration(results) {
+  return results.map(r => {
+    const [sh, sm] = r.timeStart.split(":").map(Number);
+    const [eh, em] = r.timeEnd.split(":").map(Number);
+    return { ...r, durationMinutes: eh * 60 + em - (sh * 60 + sm) };
   });
+}
 
-  Object.keys(byDate).sort().forEach(date => {
-    msg += `\n${date}\n`;
-    byDate[date].forEach(r => {
-      msg += `　${r.facilityName} ${r.roomName}：${r.timeStart}〜${r.timeEnd}\n`;
+function resultKey(r) {
+  return `${r.facilityName}|${r.roomName}|${r.date}|${r.timeStart}|${r.timeEnd}`;
+}
+
+function formatSlotLine(r) {
+  const d = dayjs(r.date);
+  const dow = d.day();
+  // このシステムは土日祝のみを対象にしているため、土日以外は必然的に祝日
+  const label = dow === 6 ? "土" : dow === 0 ? "日" : "祝";
+  return `　${d.format("M/D")}(${label}) ${r.facilityName} ${r.roomName}：${r.timeStart}〜${r.timeEnd}`;
+}
+
+// 前回チェック時との差分(追加/削除)のみを通知する。全件を毎回列挙すると
+// メッセージが肥大化するうえ内容も把握しづらいため、変化点だけを伝える設計にしている。
+function buildDiffMessage(siteName, added, removed) {
+  let msg = `🏸 ${siteName}\n`;
+
+  if (added.length > 0) {
+    msg += `\n🆕 新たに空きが出ました (${added.length}件)\n`;
+    added.forEach(r => {
+      msg += formatSlotLine(r) + "\n";
     });
-    msg += `${byDate[date][0].url}\n`;
-  });
+  }
 
+  if (removed.length > 0) {
+    msg += `\n🚫 空きがなくなりました (${removed.length}件)\n`;
+    removed.forEach(r => {
+      msg += formatSlotLine(r) + "\n";
+    });
+  }
+
+  msg += `\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
   return msg;
+}
+
+function diffResults(previous, current) {
+  const prevKeys = new Set(previous.map(resultKey));
+  const currKeys = new Set(current.map(resultKey));
+  return {
+    added: current.filter(r => !prevKeys.has(resultKey(r))),
+    removed: previous.filter(r => !currKeys.has(resultKey(r)))
+  };
 }
 
 // ダッシュボード表示用に、通知の有無に関わらず毎回のチェック結果を返す
@@ -54,18 +88,29 @@ async function checkOneSite(siteConfig) {
   let results = [];
   let error = null;
   try {
-    results = dedupeResults(await adapter(siteConfig));
+    results = withDuration(dedupeResults(await adapter(siteConfig)));
+    const previous = loadLastResults(siteConfig.id);
 
-    if (results.length === 0) {
-      writeLog(`[${siteConfig.id}] 空きなし`);
-    } else if (!shouldNotify(siteConfig.id, results)) {
-      writeLog(`[${siteConfig.id}] 前回と同じため通知せず`);
+    if (previous === null) {
+      // 初回チェックは差分を出しようがないため、件数のみ知らせる
+      if (results.length > 0) {
+        const msg = `🏸 ${siteConfig.name}\n\n初回チェックで${results.length}件の空き枠を検出しました。\n\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
+        await sendLineMessage(msg);
+        writeLog(`[${siteConfig.id}] 初回チェック・通知送信完了`);
+      } else {
+        writeLog(`[${siteConfig.id}] 初回チェック・空きなし`);
+      }
     } else {
-      const msg = buildMessage(siteConfig.name, results);
-      await sendLineMessage(msg);
-      saveLastResults(siteConfig.id, results);
-      writeLog(`[${siteConfig.id}] 通知送信完了`);
+      const { added, removed } = diffResults(previous, results);
+      if (added.length === 0 && removed.length === 0) {
+        writeLog(`[${siteConfig.id}] 前回と同じため通知せず`);
+      } else {
+        await sendLineMessage(buildDiffMessage(siteConfig.name, added, removed));
+        writeLog(`[${siteConfig.id}] 通知送信完了(追加${added.length}件/削除${removed.length}件)`);
+      }
     }
+
+    saveLastResults(siteConfig.id, results);
   } catch (err) {
     error = err.message;
     writeLog(`[${siteConfig.id}] エラー発生: ${err.message}`);

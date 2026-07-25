@@ -1,6 +1,7 @@
 // サイトごとの設定を集約する
 // monthsAhead: 何ヶ月先まで対象にするか（土日祝を対象）
-// minVacantMinutes: 通知対象とする連続空き時間のしきい値（分）。共通ルールは3時間=180分
+// minVacantMinutes: 検出対象とする連続空き時間のしきい値（分）。2時間=120分を下限とし、
+//                   ダッシュボード側で「2時間以上」「3時間以上」のフィルタを提供する
 
 export const sites = [
   {
@@ -8,7 +9,7 @@ export const sites = [
     name: "桶川サンアリーナ",
     adapter: "okegawa",
     monthsAhead: 3,
-    minVacantMinutes: 180,
+    minVacantMinutes: 120,
     baseUrl: "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php",
     courtLabels: ["バドミ０１", "バドミ０２", "バドミ０３", "バドミ０４"]
   },
@@ -17,7 +18,7 @@ export const sites = [
     name: "蓮田市公共施設予約・案内システム",
     adapter: "hasuda",
     monthsAhead: 3,
-    minVacantMinutes: 180,
+    minVacantMinutes: 120,
     entryUrl: "https://www.task-asp.net/cu/eg/ykr112381.task",
     facilities: [
       {
@@ -47,7 +48,7 @@ export const sites = [
     name: "上尾市公共施設予約システム",
     adapter: "ageo",
     monthsAhead: 2,
-    minVacantMinutes: 180,
+    minVacantMinutes: 120,
     homeUrl: "https://www.pf-yoyaku.com/User/ageo/Home",
     facilityCategory: "市民体育館",
     facilityName: "自動車精工　上尾市民体育館（市民体育館）",

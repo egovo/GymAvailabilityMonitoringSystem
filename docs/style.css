@@ -252,12 +252,54 @@ body {
 
 .filter-bar {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 20px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  min-width: 40px;
+  flex: none;
+}
+
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px;
+  background: var(--surface);
+  gap: 2px;
+}
+
+.segmented button {
+  border: none;
+  background: transparent;
+  padding: 5px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.segmented button.is-active {
+  background: var(--accent);
+  color: #fff;
 }
 
 .chip {
@@ -370,10 +412,22 @@ body {
   white-space: nowrap;
 }
 
+.slot-time-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
 .slot-time {
   font-size: 15px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
+}
+
+.slot-duration {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-faint);
 }
 
 .slot-facility {

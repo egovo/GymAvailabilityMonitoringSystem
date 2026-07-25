@@ -24,12 +24,6 @@ export function saveLastResults(siteId, results) {
   writeLog(`[${siteId}] 前回データ保存`);
 }
 
-export function shouldNotify(siteId, current) {
-  const last = loadLastResults(siteId);
-  if (!last) return true;
-  return JSON.stringify(current) !== JSON.stringify(last);
-}
-
 // 週単位の空き状況フィンガープリント（部屋+週の粒度でキャッシュし、
 // 変化のない週はPlaywrightでの時間帯詳細取得をスキップするために使う）
 const FINGERPRINT_DIR = "./data/state/fingerprints";

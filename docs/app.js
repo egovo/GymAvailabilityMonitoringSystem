@@ -1,5 +1,6 @@
 const DATA_URL = "data.json";
 const AUTO_REFRESH_MS = 5 * 60 * 1000; // データ更新は15分間隔なので、5分おきに再取得すれば十分
+const FILTER_NOTE = "15分間隔で自動確認・時刻は現地(JST)基準";
 
 // サイトごとのアクセントカラー。未知のIDが増えても破綻しないようフォールバックを用意する。
 const SITE_COLORS = {
@@ -9,11 +10,17 @@ const SITE_COLORS = {
 };
 const FALLBACK_COLORS = ["#7c3aed", "#0891b2", "#db2777", "#65a30d"];
 
-const WEEKDAY_LABELS = ["日", "月", "火", "水", "木", "金", "土"];
+const WEEKDAY_FILTERS = [
+  { key: "sat", label: "土" },
+  { key: "sun", label: "日" },
+  { key: "holiday", label: "祝" }
+];
 
 const state = {
   data: null,
-  activeSites: new Set() // 空 = すべて表示
+  activeSites: new Set(), // 空 = すべて表示
+  activeWeekdays: new Set(), // 空 = すべて表示
+  minDuration: 120 // 120=2時間以上(すべて) / 180=3時間以上
 };
 
 const els = {
@@ -41,14 +48,25 @@ function relativeTime(isoString) {
   return `${day}日前`;
 }
 
-function formatDateHeading(dateStr) {
+// このシステムは土日祝のみを対象にしているため、土日以外は必然的に祝日
+function weekdayInfoOf(dateStr) {
   const d = new Date(`${dateStr}T00:00:00+09:00`);
-  const md = `${d.getMonth() + 1}月${d.getDate()}日`;
-  const weekday = d.getDay();
-  // このシステムは土日祝のみを対象にしているため、土日以外は必然的に祝日
-  const isHoliday = weekday !== 0 && weekday !== 6;
-  const label = isHoliday ? "祝" : WEEKDAY_LABELS[weekday];
-  return { text: `${md}（${label}）`, isHoliday };
+  const dow = d.getDay();
+  if (dow === 6) return { date: d, dow, key: "sat", label: "土" };
+  if (dow === 0) return { date: d, dow, key: "sun", label: "日" };
+  return { date: d, dow, key: "holiday", label: "祝" };
+}
+
+function formatDateHeading(dateStr) {
+  const { date, key, label } = weekdayInfoOf(dateStr);
+  const md = `${date.getMonth() + 1}月${date.getDate()}日`;
+  return { md, key, label };
+}
+
+function formatDuration(minutes) {
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return m === 0 ? `${h}時間` : `${h}時間${m}分`;
 }
 
 async function loadData() {
@@ -79,6 +97,7 @@ function render() {
   if (!state.data) return;
   renderHeader();
   renderOverview();
+  renderFilterBar();
   renderResults();
 }
 
@@ -116,27 +135,52 @@ function renderOverview() {
   els.overview.querySelectorAll(".site-card").forEach(card => {
     card.addEventListener("click", () => toggleSite(card.dataset.site));
   });
-
-  renderFilterChips();
 }
 
-function renderFilterChips() {
+function renderFilterBar() {
   const sites = state.data.sites || [];
-  const existingNote = els.filterBar.querySelector(".filter-note");
-  els.filterBar.innerHTML = "";
 
-  sites.forEach((site, i) => {
-    const color = colorFor(site.id, i);
-    const isActive = state.activeSites.size === 0 || state.activeSites.has(site.id);
-    const chip = document.createElement("button");
-    chip.className = `chip ${isActive ? "is-active" : ""}`;
-    chip.style.setProperty("--dot-color", color);
-    chip.innerHTML = `<span class="dot"></span>${escapeHtml(site.name)}`;
-    chip.addEventListener("click", () => toggleSite(site.id));
-    els.filterBar.appendChild(chip);
+  const siteChips = sites
+    .map((site, i) => {
+      const color = colorFor(site.id, i);
+      const isActive = state.activeSites.size === 0 || state.activeSites.has(site.id);
+      return `<button class="chip ${isActive ? "is-active" : ""}" style="--dot-color:${color}" data-site="${site.id}">
+        <span class="dot"></span>${escapeHtml(site.name)}</button>`;
+    })
+    .join("");
+
+  const weekdayChips = WEEKDAY_FILTERS.map(w => {
+    const isActive = state.activeWeekdays.size === 0 || state.activeWeekdays.has(w.key);
+    return `<button class="chip ${isActive ? "is-active" : ""}" data-weekday="${w.key}">${w.label}</button>`;
+  }).join("");
+
+  els.filterBar.innerHTML = `
+    <div class="filter-row">
+      <span class="filter-label">会場</span>
+      ${siteChips}
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">枠の長さ</span>
+      <div class="segmented">
+        <button data-duration="120" class="${state.minDuration === 120 ? "is-active" : ""}">2時間以上</button>
+        <button data-duration="180" class="${state.minDuration === 180 ? "is-active" : ""}">3時間以上</button>
+      </div>
+      <span class="filter-label" style="margin-left:8px">曜日</span>
+      ${weekdayChips}
+    </div>
+    <div class="filter-row">
+      <span class="filter-note">${FILTER_NOTE}</span>
+    </div>`;
+
+  els.filterBar.querySelectorAll("[data-site]").forEach(btn => {
+    btn.addEventListener("click", () => toggleSite(btn.dataset.site));
   });
-
-  els.filterBar.appendChild(existingNote);
+  els.filterBar.querySelectorAll("[data-weekday]").forEach(btn => {
+    btn.addEventListener("click", () => toggleWeekday(btn.dataset.weekday));
+  });
+  els.filterBar.querySelectorAll("[data-duration]").forEach(btn => {
+    btn.addEventListener("click", () => setMinDuration(Number(btn.dataset.duration)));
+  });
 }
 
 function toggleSite(siteId) {
@@ -146,16 +190,31 @@ function toggleSite(siteId) {
     state.activeSites = new Set([siteId]);
   } else if (state.activeSites.has(siteId)) {
     state.activeSites.delete(siteId);
-    if (state.activeSites.size === 0) {
-      // 全解除されたら全表示に戻す
-    } else if (state.activeSites.size === sites.length) {
-      state.activeSites.clear();
-    }
   } else {
     state.activeSites.add(siteId);
     if (state.activeSites.size === sites.length) state.activeSites.clear();
   }
   renderOverview();
+  renderFilterBar();
+  renderResults();
+}
+
+function toggleWeekday(key) {
+  if (state.activeWeekdays.size === 0) {
+    state.activeWeekdays = new Set([key]);
+  } else if (state.activeWeekdays.has(key)) {
+    state.activeWeekdays.delete(key);
+  } else {
+    state.activeWeekdays.add(key);
+    if (state.activeWeekdays.size === WEEKDAY_FILTERS.length) state.activeWeekdays.clear();
+  }
+  renderFilterBar();
+  renderResults();
+}
+
+function setMinDuration(minutes) {
+  state.minDuration = minutes;
+  renderFilterBar();
   renderResults();
 }
 
@@ -167,6 +226,10 @@ function renderResults() {
   activeSites.forEach((site, i) => {
     const color = colorFor(site.id, i);
     (site.results || []).forEach(r => {
+      if (r.durationMinutes != null && r.durationMinutes < state.minDuration) return;
+      const wd = weekdayInfoOf(r.date);
+      if (state.activeWeekdays.size > 0 && !state.activeWeekdays.has(wd.key)) return;
+
       byDate[r.date] = byDate[r.date] || [];
       byDate[r.date].push({ ...r, color });
     });
@@ -178,15 +241,15 @@ function renderResults() {
     els.results.innerHTML = `
       <div class="state-block">
         <div class="icon">📭</div>
-        <h2>現在、条件に合う空き枠はありません</h2>
-        <p>3時間以上連続で空いている枠が見つかり次第、ここに表示されます。</p>
+        <h2>条件に合う空き枠はありません</h2>
+        <p>絞り込みを変更するか、新しい空き枠が見つかるまでお待ちください。</p>
       </div>`;
     return;
   }
 
   els.results.innerHTML = dates
     .map(dateStr => {
-      const { text, isHoliday } = formatDateHeading(dateStr);
+      const { md, key, label } = formatDateHeading(dateStr);
       const slots = byDate[dateStr].sort((a, b) => a.timeStart.localeCompare(b.timeStart));
       const cards = slots
         .map(
@@ -194,7 +257,10 @@ function renderResults() {
         <a class="slot-card" style="--site-color:${s.color}" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">
           <div class="slot-card-top">
             <span class="slot-site-badge" style="--site-color:${s.color}">${escapeHtml(s.siteName)}</span>
-            <span class="slot-time">${s.timeStart}〜${s.timeEnd}</span>
+            <div class="slot-time-row">
+              <span class="slot-time">${s.timeStart}〜${s.timeEnd}</span>
+              ${s.durationMinutes != null ? `<span class="slot-duration">(${formatDuration(s.durationMinutes)})</span>` : ""}
+            </div>
           </div>
           <div class="slot-facility">${escapeHtml(s.facilityName)}</div>
           <div class="slot-room">${escapeHtml(s.roomName)}</div>
@@ -205,8 +271,8 @@ function renderResults() {
       return `
         <section class="date-group">
           <h2 class="date-heading">
-            ${text.replace(/（.+）/, "")}
-            <span class="weekday ${isHoliday ? "is-holiday" : ""}">${text.match(/（(.+)）/)[1]}</span>
+            ${md}
+            <span class="weekday ${key === "holiday" ? "is-holiday" : ""}">${label}</span>
           </h2>
           <div class="slot-grid">${cards}</div>
         </section>`;
