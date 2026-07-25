@@ -8,6 +8,10 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 const SKIP_STATUS = new Set(["空き無し", "休館日", "予約期間外"]);
 
+// ASP.NET WebFormsが postback の整合性エラー時に表示する文言。
+// これが出た場合、詳細ページの内容は信用できない(VIEWSTATE/セッションの不整合)。
+const ERROR_MARKER = "処理を継続することができません";
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -75,6 +79,15 @@ async function gotoFacilityWeekly(page, entryUrl, facilityName) {
   await page.waitForLoadState("networkidle");
 }
 
+// postbackエラーなどでページ状態が壊れた際、施設トップから該当週まで再遷移して復旧する
+async function syncToWeek(page, entryUrl, facilityName, weekIndex) {
+  await gotoFacilityWeekly(page, entryUrl, facilityName);
+  for (let i = 0; i < weekIndex; i++) {
+    await page.click("#WeeklyAkiListCtrl_NextWeekImgBtn");
+    await page.waitForLoadState("networkidle");
+  }
+}
+
 export async function checkSite(siteConfig) {
   const { id, name, monthsAhead, minVacantMinutes, entryUrl, facilities } = siteConfig;
   const { dates, holidays } = await getTargetDates(monthsAhead, writeLog);
@@ -138,15 +151,28 @@ export async function checkSite(siteConfig) {
               const cellLink = row.locator("td.table-cell-image").nth(col).locator("a").first();
               if (await cellLink.count() === 0) continue;
 
-              await cellLink.click();
-              await page.waitForLoadState("networkidle");
+              try {
+                await cellLink.click();
+                await page.waitForLoadState("networkidle");
 
-              url = page.url();
-              blocks = await extractVacantBlocks(page, minVacantMinutes);
+                if (await page.locator(`text=${ERROR_MARKER}`).count() > 0) {
+                  throw new Error("ASP.NETエラーページを検出");
+                }
 
-              await page.goBack();
-              await page.waitForLoadState("networkidle");
-              await sleep(800);
+                url = page.url();
+                blocks = await extractVacantBlocks(page, minVacantMinutes);
+
+                await page.goBack();
+                await page.waitForLoadState("networkidle");
+                await sleep(800);
+              } catch (err) {
+                // このセルの結果は信用せず破棄し、キャッシュも更新しない(次回再確認させる)。
+                // ページ状態は施設トップから該当週まで再遷移して復旧する。
+                writeLog(`[${id}] 詳細確認失敗、再同期します: ${facility.name} ${room.name} ${dateStr}: ${err.message}`);
+                await syncToWeek(page, entryUrl, facility.name, week);
+                await sleep(800);
+                continue;
+              }
             }
 
             nextCache[cacheKey] = { status: alt, blocks, url };

@@ -151,50 +151,68 @@ export async function checkSite(siteConfig) {
 
     writeLog(`[${id}] 詳細確認対象: ${flaggedCells.length}件`);
 
-    // フェーズ2: 詳細確認が必要なセルだけ、時間帯別空き状況を取得する
+    // フェーズ2: 詳細確認が必要なセルだけ、時間帯別空き状況を取得する。
+    // 1件の失敗がサイト全体のエラー通知に波及しないよう、セル単位でリトライし
+    // 諦める場合もログに残すだけで処理は継続する。
+    const CELL_RETRIES = 2;
     for (const cellInfo of flaggedCells) {
-      const { page, context } = await gotoWeek(browser, siteConfig, cellInfo.weekIndex);
-      const row = page.locator("table.table-schedule tbody tr", { hasText: cellInfo.roomName }).first();
-      const cells = row.locator("td.btn-group-toggle");
-      const cellCount = await cells.count();
+      for (let attempt = 1; attempt <= CELL_RETRIES; attempt++) {
+        const { page, context } = await gotoWeek(browser, siteConfig, cellInfo.weekIndex);
+        try {
+          const row = page.locator("table.table-schedule tbody tr", { hasText: cellInfo.roomName }).first();
+          const cells = row.locator("td.btn-group-toggle");
+          const cellCount = await cells.count();
 
-      let targetCol = -1;
-      for (let col = 0; col < cellCount; col++) {
-        const dateAttr = await cells.nth(col).locator('input[name*="UseDate"]').getAttribute("value");
-        if (dateAttr && dateAttr.slice(0, 10) === cellInfo.dateStr) {
-          targetCol = col;
-          break;
+          let targetCol = -1;
+          for (let col = 0; col < cellCount; col++) {
+            const dateAttr = await cells.nth(col).locator('input[name*="UseDate"]').getAttribute("value");
+            if (dateAttr && dateAttr.slice(0, 10) === cellInfo.dateStr) {
+              targetCol = col;
+              break;
+            }
+          }
+
+          if (targetCol === -1) {
+            writeLog(`[${id}] 対象セルが見つかりません: ${cellInfo.roomName} ${cellInfo.dateStr}`);
+            await context.close();
+            break; // リトライしても解決しないため終了
+          }
+
+          await cells.nth(targetCol).locator("label.btn-toggle").click({ force: true });
+          await page.getByRole("button", { name: "次へ進む" }).first().click({ force: true });
+          await page.waitForLoadState("networkidle");
+          // 画面遷移の完了(時間帯別テーブルの描画)を明示的に待ってから評価する。
+          // ネットワーク遅延が大きい環境ではnetworkidleだけでは不十分なため。
+          await page.waitForSelector('input[name*="TimeFrom"]', { timeout: 15000 }).catch(() => {});
+
+          const blocks = await extractVacantBlocks(page, minVacantMinutes);
+          const url = page.url();
+          nextCache[`${cellInfo.roomName}|${cellInfo.dateStr}`] = { status: cellInfo.status, blocks, url };
+          blocks.forEach(b => {
+            results.push({
+              siteId: id,
+              siteName: name,
+              facilityName: siteConfig.facilityName,
+              roomName: cellInfo.roomName,
+              date: cellInfo.dateStr,
+              url,
+              timeStart: b.start,
+              timeEnd: b.end
+            });
+          });
+
+          await context.close();
+          break; // 成功
+        } catch (err) {
+          await context.close();
+          writeLog(`[${id}] 詳細確認失敗(${attempt}/${CELL_RETRIES}): ${cellInfo.roomName} ${cellInfo.dateStr}: ${err.message}`);
+          if (attempt >= CELL_RETRIES) {
+            writeLog(`[${id}] 詳細確認を諦めます: ${cellInfo.roomName} ${cellInfo.dateStr}`);
+          } else {
+            await sleep(2000);
+          }
         }
       }
-
-      if (targetCol === -1) {
-        writeLog(`[${id}] 対象セルが見つかりません: ${cellInfo.roomName} ${cellInfo.dateStr}`);
-        await context.close();
-        continue;
-      }
-
-      await cells.nth(targetCol).locator("label.btn-toggle").click({ force: true });
-      await page.getByRole("button", { name: "次へ進む" }).first().click({ force: true });
-      await page.waitForLoadState("networkidle");
-      await page.waitForTimeout(500);
-
-      const blocks = await extractVacantBlocks(page, minVacantMinutes);
-      const url = page.url();
-      nextCache[`${cellInfo.roomName}|${cellInfo.dateStr}`] = { status: cellInfo.status, blocks, url };
-      blocks.forEach(b => {
-        results.push({
-          siteId: id,
-          siteName: name,
-          facilityName: siteConfig.facilityName,
-          roomName: cellInfo.roomName,
-          date: cellInfo.dateStr,
-          url,
-          timeStart: b.start,
-          timeEnd: b.end
-        });
-      });
-
-      await context.close();
       await sleep(1500);
     }
   } finally {
