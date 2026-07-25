@@ -9,6 +9,9 @@ concurrency:
   group: gym-availability-check
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -39,6 +42,21 @@ jobs:
           LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
           LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
         run: npm start
+
+      # ダッシュボード(docs/data.json)を更新。変更がある場合のみコミット・pushする。
+      - name: ダッシュボードデータの反映
+        if: always()
+        run: |
+          if ! git diff --quiet -- docs/data.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/data.json
+            git commit -m "chore: update dashboard data"
+            git pull --rebase origin main
+            git push
+          else
+            echo "変更なし、コミットをスキップ"
+          fi
 
       - name: 状態データの保存
         if: always()

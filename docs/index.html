@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>体育館空き状況ダッシュボード</title>
+  <meta name="description" content="桶川・蓮田・上尾の体育館バドミントンコート空き状況を15分おきに自動更新" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏸</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div>
+        <h1>🏸 体育館空き状況ダッシュボード</h1>
+        <p class="sub" id="generated-at">読み込み中...</p>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="theme-toggle" title="テーマ切り替え" aria-label="テーマ切り替え">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn" id="refresh-btn" title="更新" aria-label="更新">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="overview" id="overview"></section>
+
+    <div class="filter-bar" id="filter-bar">
+      <span class="filter-note">3時間以上の連続空き枠(土日祝)のみ表示・15分間隔で自動確認</span>
+    </div>
+
+    <main id="results"></main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
