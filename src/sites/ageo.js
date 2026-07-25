@@ -132,7 +132,9 @@ export async function checkSite(siteConfig) {
                 facilityName: siteConfig.facilityName,
                 roomName,
                 date: dateStr,
-                url: cached.url,
+                // 詳細ページのURLはPlaywrightのセッション内でのみ有効(タイムアウトで
+                // 無効化される)ため通知には使えない。ユーザーが手動で辿れるトップURLを使う。
+                url: siteConfig.homeUrl,
                 timeStart: b.start,
                 timeEnd: b.end
               });
@@ -195,7 +197,9 @@ export async function checkSite(siteConfig) {
               facilityName: siteConfig.facilityName,
               roomName: cellInfo.roomName,
               date: cellInfo.dateStr,
-              url,
+              // 詳細ページのURLはPlaywrightのセッション内でのみ有効(タイムアウトで
+              // 無効化される)ため通知には使えない。ユーザーが手動で辿れるトップURLを使う。
+              url: siteConfig.homeUrl,
               timeStart: b.start,
               timeEnd: b.end
             });

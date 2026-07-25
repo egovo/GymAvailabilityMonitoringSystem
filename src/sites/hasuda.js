@@ -183,7 +183,9 @@ export async function checkSite(siteConfig) {
                 facilityName: facility.name,
                 roomName: room.name,
                 date: dateStr,
-                url,
+                // 詳細ページのURLはPlaywrightのセッション内でのみ有効(タイムアウトで
+                // 無効化される)ため通知には使えない。ユーザーが手動で辿れるトップURLを使う。
+                url: entryUrl,
                 timeStart: b.start,
                 timeEnd: b.end
               });
