@@ -1,4 +1,5 @@
 const DATA_URL = "data.json";
+const HISTORY_URL = "history.json";
 const AUTO_REFRESH_MS = 5 * 60 * 1000; // データ更新は15分間隔なので、5分おきに再取得すれば十分
 const FILTER_NOTE = "15分間隔で自動確認・時刻は現地(JST)基準";
 
@@ -18,6 +19,8 @@ const WEEKDAY_FILTERS = [
 
 const state = {
   data: null,
+  history: [],
+  activeTab: "slots",
   activeSites: new Set(), // 空 = すべて表示
   activeWeekdays: new Set(), // 空 = すべて表示
   minDuration: 120 // 120=2時間以上(すべて) / 180=3時間以上
@@ -26,8 +29,13 @@ const state = {
 const els = {
   generatedAt: document.getElementById("generated-at"),
   overview: document.getElementById("overview"),
+  errorBanner: document.getElementById("error-banner"),
+  viewTabs: document.getElementById("view-tabs"),
+  panelSlots: document.getElementById("panel-slots"),
+  panelHistory: document.getElementById("panel-history"),
   filterBar: document.getElementById("filter-bar"),
   results: document.getElementById("results"),
+  historyList: document.getElementById("history-list"),
   refreshBtn: document.getElementById("refresh-btn"),
   themeToggle: document.getElementById("theme-toggle")
 };
@@ -75,6 +83,12 @@ async function loadData() {
     const res = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.data = await res.json();
+
+    // 履歴は補助情報のため、取得に失敗しても空き状況の表示は継続する
+    state.history = await fetch(`${HISTORY_URL}?t=${Date.now()}`, { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : []))
+      .catch(() => []);
+
     render();
   } catch (err) {
     els.generatedAt.textContent = "データの取得に失敗しました";
@@ -97,8 +111,10 @@ function render() {
   if (!state.data) return;
   renderHeader();
   renderOverview();
+  renderErrorBanner();
   renderFilterBar();
   renderResults();
+  renderHistory();
 }
 
 function renderHeader() {
@@ -135,6 +151,31 @@ function renderOverview() {
   els.overview.querySelectorAll(".site-card").forEach(card => {
     card.addEventListener("click", () => toggleSite(card.dataset.site));
   });
+}
+
+// 現在エラーが発生しているサイトがあれば、見逃さないようページ上部に詳細を出す
+function renderErrorBanner() {
+  const sites = state.data.sites || [];
+  const erroring = sites.filter(s => s.error);
+
+  if (erroring.length === 0) {
+    els.errorBanner.innerHTML = "";
+    return;
+  }
+
+  els.errorBanner.innerHTML = erroring
+    .map(
+      s => `
+      <div class="error-banner-item">
+        <span class="icon">⚠️</span>
+        <div>
+          <span class="name">${escapeHtml(s.name)}</span><span>で確認エラーが発生しています(表示は前回取得分)</span>
+          <div class="message">${escapeHtml(s.error)}</div>
+          <div class="time">発生: ${relativeTime(s.lastErrorAt || s.checkedAt)}</div>
+        </div>
+      </div>`
+    )
+    .join("");
 }
 
 function renderFilterBar() {
@@ -280,6 +321,89 @@ function renderResults() {
     .join("");
 }
 
+function formatHistoryTime(isoString) {
+  const d = new Date(isoString);
+  const hh = String(d.getHours()).padStart(2, "0");
+  const mm = String(d.getMinutes()).padStart(2, "0");
+  return `${d.getMonth() + 1}/${d.getDate()} ${hh}:${mm}`;
+}
+
+function formatHistorySlotLine(s) {
+  const { md, label } = formatDateHeading(s.date);
+  return `${md}(${label}) ${s.facilityName} ${s.roomName}：${s.timeStart}〜${s.timeEnd}`;
+}
+
+function renderHistory() {
+  const entries = state.history || [];
+
+  if (entries.length === 0) {
+    els.historyList.innerHTML = `
+      <div class="state-block">
+        <div class="icon">🗒️</div>
+        <h2>履歴はまだありません</h2>
+        <p>空き枠の増減やエラーが発生すると、ここに記録されます。</p>
+      </div>`;
+    return;
+  }
+
+  els.historyList.innerHTML = entries
+    .map(e => {
+      if (e.type === "error") {
+        return `
+          <div class="history-item is-error">
+            <div class="history-time">${formatHistoryTime(e.timestamp)}</div>
+            <div class="history-body">
+              <div class="history-head">
+                <span>${escapeHtml(e.siteName)}</span>
+                <div class="history-badges"><span class="badge-error">⚠️ エラー</span></div>
+              </div>
+              <div class="history-detail"><div>${escapeHtml(e.message)}</div></div>
+            </div>
+          </div>`;
+      }
+
+      const added = e.added || [];
+      const removed = e.removed || [];
+      const badges = [
+        added.length > 0 ? `<span class="badge-add">🆕 +${added.length}</span>` : "",
+        removed.length > 0 ? `<span class="badge-remove">🚫 -${removed.length}</span>` : ""
+      ].join("");
+      const detailLines = [
+        ...added.map(s => `<div>+ ${escapeHtml(formatHistorySlotLine(s))}</div>`),
+        ...removed.map(s => `<div>- ${escapeHtml(formatHistorySlotLine(s))}</div>`)
+      ].join("");
+
+      return `
+        <div class="history-item">
+          <div class="history-time">${formatHistoryTime(e.timestamp)}</div>
+          <div class="history-body">
+            <div class="history-head">
+              <span>${escapeHtml(e.siteName)}</span>
+              <div class="history-badges">${badges}</div>
+            </div>
+            <div class="history-detail">${detailLines}</div>
+          </div>
+        </div>`;
+    })
+    .join("");
+}
+
+function initTabs() {
+  const panels = { slots: els.panelSlots, history: els.panelHistory };
+  els.viewTabs.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.activeTab = btn.dataset.tab;
+      els.viewTabs.querySelectorAll("button").forEach(b => {
+        b.classList.toggle("is-active", b === btn);
+        b.setAttribute("aria-selected", String(b === btn));
+      });
+      Object.entries(panels).forEach(([key, el]) => {
+        el.hidden = key !== state.activeTab;
+      });
+    });
+  });
+}
+
 function initTheme() {
   const saved = localStorage.getItem("gym-dashboard-theme");
   if (saved) document.documentElement.setAttribute("data-theme", saved);
@@ -298,6 +422,7 @@ function initTheme() {
 }
 
 initTheme();
+initTabs();
 els.refreshBtn.addEventListener("click", loadData);
 loadData();
 setInterval(loadData, AUTO_REFRESH_MS);

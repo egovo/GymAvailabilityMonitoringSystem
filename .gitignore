@@ -1,7 +1,9 @@
 node_modules/
 .env
 logs/
-data/state/
+# data/state/*.json (前回結果) はactions/cacheの失効による通知漏れを防ぐためgit管理する。
+# fingerprints(週次キャッシュ)は失っても再取得されるだけなので引き続き除外する。
+data/state/fingerprints/
 *.log
 test-results/
 playwright-report/

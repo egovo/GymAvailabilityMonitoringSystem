@@ -27,12 +27,13 @@ jobs:
       - name: 依存関係インストール(Playwright同梱ブラウザも取得)
         run: npm ci
 
-      # data/state (前回結果・週次キャッシュ) を実行間で引き継ぐ。
+      # data/state/fingerprints (週次キャッシュ、失っても再取得されるだけの性能用データ) のみ
+      # actions/cacheで引き継ぐ。前回結果(data/state/*.json)はgit管理に変更したため対象外。
       # 完全一致キーは使わず run_id で毎回新規保存し、直前の内容を restore-keys で復元する。
-      - name: 状態データの復元
+      - name: 週次キャッシュの復元
         uses: actions/cache/restore@v4
         with:
-          path: data/state
+          path: data/state/fingerprints
           key: gym-state-${{ github.run_id }}
           restore-keys: |
             gym-state-
@@ -43,14 +44,16 @@ jobs:
           LINE_GROUP_ID: ${{ secrets.LINE_GROUP_ID }}
         run: npm start
 
-      # ダッシュボード(docs/data.json)を更新。変更がある場合のみコミット・pushする。
-      - name: ダッシュボードデータの反映
+      # ダッシュボード(docs/data.json, docs/history.json)と前回結果(data/state/*.json)を反映。
+      # actions/cacheは7日間未アクセスで失効するため、通知の正誤に関わる前回結果は
+      # cacheに頼らずgitへ確実にコミットしておく(失効時の誤通知の連発を防ぐため)。
+      - name: 状態データの反映
         if: always()
         run: |
-          if ! git diff --quiet -- docs/data.json; then
+          if ! git diff --quiet -- docs/data.json docs/history.json data/state/*.json; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add docs/data.json
+            git add docs/data.json docs/history.json data/state/*.json
             git commit -m "chore: update dashboard data"
             git pull --rebase origin main
             git push
@@ -58,11 +61,11 @@ jobs:
             echo "変更なし、コミットをスキップ"
           fi
 
-      - name: 状態データの保存
+      - name: 週次キャッシュの保存
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: data/state
+          path: data/state/fingerprints
           key: gym-state-${{ github.run_id }}
 
       - name: ログをアーティファクトとして保存
