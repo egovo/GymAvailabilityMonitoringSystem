@@ -4,28 +4,6 @@
     "siteName": "桶川サンアリーナ",
     "facilityName": "桶川サンアリーナ",
     "roomName": "バドミントンコート",
-    "date": "2026-07-25",
-    "url": "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=7&d_n=25",
-    "timeStart": "14:00",
-    "timeEnd": "16:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "facilityName": "桶川サンアリーナ",
-    "roomName": "バドミントンコート",
-    "date": "2026-07-26",
-    "url": "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=7&d_n=26",
-    "timeStart": "16:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "facilityName": "桶川サンアリーナ",
-    "roomName": "バドミントンコート",
     "date": "2026-08-11",
     "url": "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=8&d_n=11",
     "timeStart": "14:00",
