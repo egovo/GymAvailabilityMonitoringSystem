@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-26T01:24:54+00:00",
+  "generatedAt": "2026-07-26T05:03:22+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-07-26T01:18:53+00:00",
+      "checkedAt": "2026-07-26T04:59:27+00:00",
       "error": null,
       "results": [
         {
@@ -23,7 +23,7 @@
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-07-26T01:23:23+00:00",
+      "checkedAt": "2026-07-26T05:00:40+00:00",
       "error": null,
       "results": [
         {
@@ -89,8 +89,8 @@
           "date": "2026-10-12",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "09:00",
-          "timeEnd": "21:30",
-          "durationMinutes": 750
+          "timeEnd": "17:00",
+          "durationMinutes": 480
         },
         {
           "siteId": "hasuda",
@@ -680,7 +680,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-07-26T01:24:54+00:00",
+      "checkedAt": "2026-07-26T05:03:22+00:00",
       "error": null,
       "results": [
         {
@@ -692,6 +692,39 @@
           "url": "https://www.pf-yoyaku.com/User/ageo/Home",
           "timeStart": "18:00",
           "timeEnd": "21:00",
+          "durationMinutes": 180
+        },
+        {
+          "siteId": "ageo",
+          "siteName": "上尾市公共施設予約システム",
+          "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+          "roomName": "アリーナ",
+          "date": "2026-08-09",
+          "url": "https://www.pf-yoyaku.com/User/ageo/Home",
+          "timeStart": "18:00",
+          "timeEnd": "21:00",
+          "durationMinutes": 180
+        },
+        {
+          "siteId": "ageo",
+          "siteName": "上尾市公共施設予約システム",
+          "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+          "roomName": "アリーナ",
+          "date": "2026-09-21",
+          "url": "https://www.pf-yoyaku.com/User/ageo/Home",
+          "timeStart": "15:00",
+          "timeEnd": "18:00",
+          "durationMinutes": 180
+        },
+        {
+          "siteId": "ageo",
+          "siteName": "上尾市公共施設予約システム",
+          "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+          "roomName": "アリーナ",
+          "date": "2026-09-22",
+          "url": "https://www.pf-yoyaku.com/User/ageo/Home",
+          "timeStart": "15:00",
+          "timeEnd": "18:00",
           "durationMinutes": 180
         }
       ]
