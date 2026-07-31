@@ -37,35 +37,11 @@ function resultKey(r) {
   return `${r.facilityName}|${r.roomName}|${r.date}|${r.timeStart}|${r.timeEnd}`;
 }
 
-function formatSlotLine(r) {
-  const d = dayjs(r.date);
-  const dow = d.day();
-  // このシステムは土日祝のみを対象にしているため、土日以外は必然的に祝日
-  const label = dow === 6 ? "土" : dow === 0 ? "日" : "祝";
-  return `　${d.format("M/D")}(${label}) ${r.facilityName} ${r.roomName}：${r.timeStart}〜${r.timeEnd}`;
-}
-
-// 前回チェック時との差分(追加/削除)のみを通知する。全件を毎回列挙すると
-// メッセージが肥大化するうえ内容も把握しづらいため、変化点だけを伝える設計にしている。
-function buildDiffMessage(siteName, added, removed) {
-  let msg = `🏀 ${siteName}\n`;
-
-  if (added.length > 0) {
-    msg += `\n🆕 新たに空きが出ました (${added.length}件)\n`;
-    added.forEach(r => {
-      msg += formatSlotLine(r) + "\n";
-    });
-  }
-
-  if (removed.length > 0) {
-    msg += `\n🚫 空きがなくなりました (${removed.length}件)\n`;
-    removed.forEach(r => {
-      msg += formatSlotLine(r) + "\n";
-    });
-  }
-
-  msg += `\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
-  return msg;
+// 前回チェック時との差分(追加/削除)を検知した際の通知。件数が多いと詳細列挙は
+// メッセージが肥大化して読みにくいため、変化があった事実とダッシュボードへの
+// リンクのみを伝え、詳細はダッシュボード側で確認してもらう設計にしている。
+function buildDiffMessage() {
+  return `🏀 体育館空き状況監視システム\n\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
 }
 
 function diffResults(previous, current) {
@@ -124,7 +100,7 @@ async function checkOneSite(siteConfig) {
     if (previous === null) {
       // 初回チェックは差分を出しようがないため、件数のみ知らせる
       if (results.length > 0) {
-        const msg = `🏀 ${siteConfig.name}\n\n初回チェックで${results.length}件の空き枠を検出しました。\n\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
+        const msg = `🏀 体育館空き状況監視システム\n\n初回チェックで${results.length}件の空き枠を検出しました。\n\n📊 ダッシュボードで確認: ${DASHBOARD_URL}`;
         await sendLineMessage(msg);
         historyEvent = buildDiffHistoryEvent(siteConfig, results, []);
         writeLog(`[${siteConfig.id}] 初回チェック・通知送信完了`);
@@ -136,7 +112,7 @@ async function checkOneSite(siteConfig) {
       if (added.length === 0 && removed.length === 0) {
         writeLog(`[${siteConfig.id}] 前回と同じため通知せず`);
       } else {
-        await sendLineMessage(buildDiffMessage(siteConfig.name, added, removed));
+        await sendLineMessage(buildDiffMessage());
         historyEvent = buildDiffHistoryEvent(siteConfig, added, removed);
         writeLog(`[${siteConfig.id}] 通知送信完了(追加${added.length}件/削除${removed.length}件)`);
       }
