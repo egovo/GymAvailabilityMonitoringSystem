@@ -1,5 +1,401 @@
 [
   {
+    "id": "hasuda-1785773627132",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-03T16:13:47+00:00",
+    "added": [
+      {
+        "date": "2026-08-16",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ａ",
+        "timeStart": "16:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-16",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ａ",
+        "timeStart": "17:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ全面",
+        "timeStart": "12:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ａ",
+        "timeStart": "12:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "09:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ全面",
+        "timeStart": "12:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ａ",
+        "timeStart": "12:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "09:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ全面",
+        "timeStart": "09:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ａ",
+        "timeStart": "09:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "09:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-04",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "09:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ全面",
+        "timeStart": "12:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ａ",
+        "timeStart": "12:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "09:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-09-20",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-21",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "16:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "09:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "12:00",
+        "timeEnd": "21:00"
+      }
+    ],
+    "removed": [
+      {
+        "date": "2026-08-09",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ａ",
+        "timeStart": "16:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-13",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-09-27",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ全面",
+        "timeStart": "15:00",
+        "timeEnd": "17:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ａ",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "14:00",
+        "timeEnd": "17:00"
+      },
+      {
+        "date": "2026-08-16",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-16",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "12:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-23",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-23",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "12:00"
+      },
+      {
+        "date": "2026-08-23",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "16:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-08-30",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-06",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-13",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-13",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-13",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-20",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "17:00"
+      },
+      {
+        "date": "2026-09-27",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-21",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-27",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-27",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-10-04",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-04",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-04",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-10-11",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-10-11",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "17:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-18",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-10-25",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-25",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "09:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-10-25",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      }
+    ]
+  },
+  {
     "id": "ageo-1785764755362",
     "type": "diff",
     "siteId": "ageo",
