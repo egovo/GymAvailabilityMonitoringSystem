@@ -1,5 +1,39 @@
 [
   {
+    "id": "okegawa-1785754639098",
+    "type": "diff",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-08-03T10:57:19+00:00",
+    "added": [
+      {
+        "date": "2026-08-09",
+        "facilityName": "桶川サンアリーナ",
+        "roomName": "バドミントンコート",
+        "timeStart": "12:00",
+        "timeEnd": "14:00"
+      }
+    ],
+    "removed": []
+  },
+  {
+    "id": "ageo-1785754860189",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-08-03T11:01:00+00:00",
+    "added": [
+      {
+        "date": "2026-08-09",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "okegawa-1785729401254",
     "type": "diff",
     "siteId": "okegawa",
