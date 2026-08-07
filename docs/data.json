@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-07T05:28:37+00:00",
+  "generatedAt": "2026-08-07T06:51:30+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-08-07T05:25:56+00:00",
+      "checkedAt": "2026-08-07T06:48:19+00:00",
       "error": null,
       "results": [
         {
@@ -23,7 +23,7 @@
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-08-07T05:27:08+00:00",
+      "checkedAt": "2026-08-07T06:49:29+00:00",
       "error": null,
       "results": [
         {
@@ -278,17 +278,6 @@
           "timeStart": "17:00",
           "timeEnd": "19:00",
           "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "農業者トレーニングセンター",
-          "roomName": "多目的ホール（片面Ａ・ステージあり）",
-          "date": "2026-08-08",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "14:00",
-          "timeEnd": "18:00",
-          "durationMinutes": 240
         },
         {
           "siteId": "hasuda",
@@ -1087,7 +1076,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-08-07T05:28:37+00:00",
+      "checkedAt": "2026-08-07T06:51:30+00:00",
       "error": null,
       "results": [
         {

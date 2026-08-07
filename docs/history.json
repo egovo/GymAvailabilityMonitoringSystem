@@ -1,5 +1,22 @@
 [
   {
+    "id": "hasuda-1786085369876",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-07T06:49:29+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-08-08",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "14:00",
+        "timeEnd": "18:00"
+      }
+    ]
+  },
+  {
     "id": "hasuda-1786063605709",
     "type": "diff",
     "siteId": "hasuda",
