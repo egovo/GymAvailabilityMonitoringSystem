@@ -1,5 +1,13 @@
 [
   {
+    "id": "hasuda-1786473994575",
+    "type": "error",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-11T18:46:34+00:00",
+    "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設案内・予約')\n"
+  },
+  {
     "id": "hasuda-1786470252614",
     "type": "error",
     "siteId": "hasuda",
