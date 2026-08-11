@@ -1,5 +1,37 @@
 [
   {
+    "id": "hasuda-1786462887882",
+    "type": "error",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-11T15:41:27+00:00",
+    "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設案内・予約')\n"
+  },
+  {
+    "id": "ageo-1786463003396",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-08-11T15:43:23+00:00",
+    "added": [
+      {
+        "date": "2026-09-22",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "09:00",
+        "timeEnd": "12:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "hasuda-1786458960712",
     "type": "diff",
     "siteId": "hasuda",
