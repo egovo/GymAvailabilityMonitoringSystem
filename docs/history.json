@@ -1,5 +1,22 @@
 [
   {
+    "id": "ageo-1786612646277",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-08-13T09:17:26+00:00",
+    "added": [
+      {
+        "date": "2026-09-06",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "ageo-1786601193483",
     "type": "diff",
     "siteId": "ageo",
