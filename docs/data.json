@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-14T15:51:06+00:00",
+  "generatedAt": "2026-08-14T16:37:37+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-08-14T15:45:36+00:00",
+      "checkedAt": "2026-08-14T16:34:42+00:00",
       "error": null,
       "results": []
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-08-14T15:48:33+00:00",
+      "checkedAt": "2026-08-14T16:35:50+00:00",
       "error": null,
       "results": [
         {
@@ -866,7 +866,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-08-14T15:51:06+00:00",
+      "checkedAt": "2026-08-14T16:37:37+00:00",
       "error": null,
       "results": []
     }
