@@ -279,17 +279,6 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-08-15",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 540
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-08-16",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "09:00",
