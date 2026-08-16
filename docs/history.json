@@ -1,5 +1,85 @@
 [
   {
+    "id": "hasuda-1786895404588",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-16T15:50:04+00:00",
+    "added": [
+      {
+        "date": "2026-09-22",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-11-03",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ全面",
+        "timeStart": "19:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-21",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "14:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-21",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "16:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "14:00",
+        "timeEnd": "17:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "19:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-23",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "09:00",
+        "timeEnd": "19:00"
+      },
+      {
+        "date": "2026-10-12",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "12:00",
+        "timeEnd": "19:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "okegawa-1786893745746",
     "type": "diff",
     "siteId": "okegawa",
