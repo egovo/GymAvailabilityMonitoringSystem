@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "facilityName": "桶川サンアリーナ",
+    "roomName": "バドミントンコート",
+    "date": "2026-08-16",
+    "url": "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=8&d_n=16",
+    "timeStart": "10:00",
+    "timeEnd": "17:00",
+    "durationMinutes": 420
+  }
+]
