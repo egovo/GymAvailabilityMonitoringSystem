@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-17T15:55:30+00:00",
+  "generatedAt": "2026-08-17T16:31:45+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-08-17T15:52:04+00:00",
+      "checkedAt": "2026-08-17T16:29:00+00:00",
       "error": null,
       "results": []
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-08-17T15:53:12+00:00",
+      "checkedAt": "2026-08-17T16:30:06+00:00",
       "error": null,
       "results": [
         {
@@ -833,21 +833,9 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-08-17T15:55:30+00:00",
+      "checkedAt": "2026-08-17T16:31:45+00:00",
       "error": null,
-      "results": [
-        {
-          "siteId": "ageo",
-          "siteName": "上尾市公共施設予約システム",
-          "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-          "roomName": "アリーナ",
-          "date": "2026-09-22",
-          "url": "https://www.pf-yoyaku.com/User/ageo/Home",
-          "timeStart": "09:00",
-          "timeEnd": "12:00",
-          "durationMinutes": 180
-        }
-      ]
+      "results": []
     }
   ]
 }
