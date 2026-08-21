@@ -1,5 +1,29 @@
 [
   {
+    "id": "ageo-1787346361654",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-08-21T21:06:01+00:00",
+    "added": [
+      {
+        "date": "2026-09-21",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "09:00",
+        "timeEnd": "12:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "ageo-1787334741267",
     "type": "diff",
     "siteId": "ageo",
@@ -23160,29 +23184,5 @@
         "timeEnd": "18:00"
       }
     ]
-  },
-  {
-    "id": "ageo-1785339431506",
-    "type": "diff",
-    "siteId": "ageo",
-    "siteName": "上尾市公共施設予約システム",
-    "timestamp": "2026-07-29T15:37:11+00:00",
-    "added": [
-      {
-        "date": "2026-08-30",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "18:00",
-        "timeEnd": "21:00"
-      },
-      {
-        "date": "2026-09-23",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "18:00",
-        "timeEnd": "21:00"
-      }
-    ],
-    "removed": []
   }
 ]
