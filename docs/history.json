@@ -1,5 +1,39 @@
 [
   {
+    "id": "hasuda-1787280448362",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-21T02:47:28+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-11-21",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "16:00",
+        "timeEnd": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "ageo-1787280573640",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-08-21T02:49:33+00:00",
+    "added": [
+      {
+        "date": "2026-09-21",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "okegawa-1787275098457",
     "type": "diff",
     "siteId": "okegawa",
@@ -23091,61 +23125,6 @@
         "roomName": "アリーナ",
         "timeStart": "18:00",
         "timeEnd": "21:00"
-      }
-    ],
-    "removed": []
-  },
-  {
-    "id": "ageo-1785279831748",
-    "type": "diff",
-    "siteId": "ageo",
-    "siteName": "上尾市公共施設予約システム",
-    "timestamp": "2026-07-28T23:03:51+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-09-21",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "09:00",
-        "timeEnd": "12:00"
-      },
-      {
-        "date": "2026-09-21",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "15:00",
-        "timeEnd": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "ageo-1785266968937",
-    "type": "diff",
-    "siteId": "ageo",
-    "siteName": "上尾市公共施設予約システム",
-    "timestamp": "2026-07-28T19:29:28+00:00",
-    "added": [
-      {
-        "date": "2026-08-30",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "18:00",
-        "timeEnd": "21:00"
-      },
-      {
-        "date": "2026-09-21",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "09:00",
-        "timeEnd": "12:00"
-      },
-      {
-        "date": "2026-09-21",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "15:00",
-        "timeEnd": "18:00"
       }
     ],
     "removed": []
