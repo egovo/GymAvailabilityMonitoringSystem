@@ -3,6 +3,72 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ全面",
+    "date": "2026-08-30",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "15:00",
+    "durationMinutes": 180
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ａ",
+    "date": "2026-08-30",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "16:00",
+    "durationMinutes": 240
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ｂ",
+    "date": "2026-08-30",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "15:00",
+    "durationMinutes": 360
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ全面",
+    "date": "2026-09-06",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "17:00",
+    "durationMinutes": 300
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ａ",
+    "date": "2026-09-06",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "17:00",
+    "durationMinutes": 300
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ｂ",
+    "date": "2026-09-06",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "17:00",
+    "durationMinutes": 480
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
     "roomName": "メインアリーナ１／２面Ｂ",
     "date": "2026-09-12",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
@@ -14,12 +80,34 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
-    "roomName": "サブアリーナ１／２面Ｂ",
-    "date": "2026-09-19",
+    "roomName": "サブアリーナ全面",
+    "date": "2026-09-06",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "19:00",
-    "timeEnd": "21:30",
-    "durationMinutes": 150
+    "timeStart": "09:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 600
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ａ",
+    "date": "2026-09-06",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 600
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ｂ",
+    "date": "2026-09-06",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 600
   },
   {
     "siteId": "hasuda",
@@ -37,29 +125,7 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
     "roomName": "サブアリーナ１／２面Ｂ",
-    "date": "2026-09-23",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "17:00",
-    "timeEnd": "19:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
-    "roomName": "サブアリーナ１／２面Ｂ",
     "date": "2026-09-26",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "17:00",
-    "timeEnd": "19:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
-    "roomName": "サブアリーナ１／２面Ｂ",
-    "date": "2026-09-27",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "17:00",
     "timeEnd": "19:00",
@@ -146,30 +212,8 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
-    "roomName": "メインアリーナ全面",
-    "date": "2026-10-12",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "17:00",
-    "durationMinutes": 480
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
     "roomName": "メインアリーナ１／２面Ａ",
     "date": "2026-10-11",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 540
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
-    "roomName": "メインアリーナ１／２面Ａ",
-    "date": "2026-10-12",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "09:00",
     "timeEnd": "18:00",
@@ -190,17 +234,6 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
-    "roomName": "メインアリーナ１／２面Ｂ",
-    "date": "2026-10-12",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "17:00",
-    "durationMinutes": 480
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
     "roomName": "メインアリーナ全面",
     "date": "2026-10-18",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
@@ -262,6 +295,39 @@
     "timeStart": "18:00",
     "timeEnd": "21:30",
     "durationMinutes": 210
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ全面",
+    "date": "2026-10-18",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "18:00",
+    "durationMinutes": 360
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ａ",
+    "date": "2026-10-18",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 420
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ｂ",
+    "date": "2026-10-18",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "18:00",
+    "durationMinutes": 540
   },
   {
     "siteId": "hasuda",
@@ -355,23 +421,67 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
-    "roomName": "メインアリーナ１／２面Ｂ",
-    "date": "2026-11-23",
+    "roomName": "メインアリーナ全面",
+    "date": "2026-11-15",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "19:00",
+    "timeStart": "09:00",
     "timeEnd": "21:30",
-    "durationMinutes": 150
+    "durationMinutes": 750
   },
   {
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-08-23",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ａ",
+    "date": "2026-11-15",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "18:00",
+    "timeStart": "09:00",
+    "timeEnd": "21:30",
+    "durationMinutes": 750
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "メインアリーナ１／２面Ｂ",
+    "date": "2026-11-15",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "21:30",
+    "durationMinutes": 750
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ全面",
+    "date": "2026-11-15",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "19:00",
     "durationMinutes": 420
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ａ",
+    "date": "2026-11-15",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 420
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ｂ",
+    "date": "2026-11-15",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 600
   },
   {
     "siteId": "hasuda",
@@ -383,28 +493,6 @@
     "timeStart": "11:00",
     "timeEnd": "18:00",
     "durationMinutes": 420
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-08-23",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "12:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-08-23",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "16:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 120
   },
   {
     "siteId": "hasuda",
@@ -422,33 +510,11 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-08-30",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-09-05",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
     "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-08-30",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
   },
   {
     "siteId": "hasuda",
@@ -477,44 +543,11 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-09-06",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-09-12",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
     "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-06",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-06",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
   },
   {
     "siteId": "hasuda",
@@ -537,17 +570,6 @@
     "timeStart": "15:00",
     "timeEnd": "18:00",
     "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-09-13",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
   },
   {
     "siteId": "hasuda",
@@ -566,28 +588,6 @@
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-09-19",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-13",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-13",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "15:00",
     "timeEnd": "18:00",
@@ -730,44 +730,11 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-09-27",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-10-03",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
     "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-27",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-09-27",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
   },
   {
     "siteId": "hasuda",
@@ -790,17 +757,6 @@
     "timeStart": "15:00",
     "timeEnd": "18:00",
     "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-10-04",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
   },
   {
     "siteId": "hasuda",
@@ -811,28 +767,6 @@
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "18:00",
     "timeEnd": "21:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-04",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-04",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
     "durationMinutes": 180
   },
   {
@@ -851,33 +785,33 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-10-11",
+    "date": "2026-10-12",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "18:00",
+    "timeStart": "09:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 600
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "農業者トレーニングセンター",
+    "roomName": "多目的ホール（片面Ａ・ステージあり）",
+    "date": "2026-10-17",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "11:00",
+    "timeEnd": "13:00",
+    "durationMinutes": 120
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "農業者トレーニングセンター",
+    "roomName": "多目的ホール（片面Ｂ）",
+    "date": "2026-10-12",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "12:00",
     "timeEnd": "21:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-10-17",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-11",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "17:00",
-    "timeEnd": "21:00",
-    "durationMinutes": 240
+    "durationMinutes": 540
   },
   {
     "siteId": "hasuda",
@@ -906,44 +840,11 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-10-18",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-10-24",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
     "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-18",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-18",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
   },
   {
     "siteId": "hasuda",
@@ -966,17 +867,6 @@
     "timeStart": "15:00",
     "timeEnd": "18:00",
     "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-10-25",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
   },
   {
     "siteId": "hasuda",
@@ -988,28 +878,6 @@
     "timeStart": "16:00",
     "timeEnd": "21:00",
     "durationMinutes": 300
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-25",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-10-25",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
   },
   {
     "siteId": "hasuda",
@@ -1115,44 +983,11 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-08",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-08",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-11-14",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "17:00",
     "timeEnd": "21:00",
     "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-11-08",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
   },
   {
     "siteId": "hasuda",
@@ -1170,7 +1005,7 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-15",
+    "date": "2026-11-21",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
@@ -1181,51 +1016,7 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-15",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-11-15",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "09:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 240
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-11-15",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "15:00",
-    "timeEnd": "18:00",
-    "durationMinutes": 180
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-22",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "11:00",
-    "timeEnd": "13:00",
-    "durationMinutes": 120
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "農業者トレーニングセンター",
-    "roomName": "多目的ホール（片面Ａ・ステージあり）",
-    "date": "2026-11-22",
+    "date": "2026-11-21",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "15:00",
     "timeEnd": "21:00",
@@ -1236,7 +1027,7 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-11-22",
+    "date": "2026-11-21",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "11:00",
     "timeEnd": "13:00",
@@ -1247,10 +1038,43 @@
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ｂ）",
-    "date": "2026-11-22",
+    "date": "2026-11-21",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
     "timeStart": "18:00",
     "timeEnd": "21:00",
     "durationMinutes": 180
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "農業者トレーニングセンター",
+    "roomName": "多目的ホール（片面Ａ・ステージあり）",
+    "date": "2026-11-23",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "09:00",
+    "timeEnd": "13:00",
+    "durationMinutes": 240
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "農業者トレーニングセンター",
+    "roomName": "多目的ホール（片面Ａ・ステージあり）",
+    "date": "2026-11-23",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "15:00",
+    "timeEnd": "19:00",
+    "durationMinutes": 240
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "農業者トレーニングセンター",
+    "roomName": "多目的ホール（片面Ｂ）",
+    "date": "2026-11-23",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "15:00",
+    "timeEnd": "21:00",
+    "durationMinutes": 360
   }
 ]
