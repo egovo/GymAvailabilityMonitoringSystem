@@ -343,6 +343,28 @@
   {
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ全面",
+    "date": "2026-11-14",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "18:00",
+    "timeEnd": "21:30",
+    "durationMinutes": 210
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "facilityName": "総合市民体育館パルシー",
+    "roomName": "サブアリーナ１／２面Ｂ",
+    "date": "2026-11-14",
+    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+    "timeStart": "18:00",
+    "timeEnd": "21:30",
+    "durationMinutes": 210
+  },
+  {
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "農業者トレーニングセンター",
     "roomName": "多目的ホール（片面Ａ・ステージあり）",
     "date": "2026-08-29",
