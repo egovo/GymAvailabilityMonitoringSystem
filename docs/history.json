@@ -1,5 +1,29 @@
 [
   {
+    "id": "hasuda-1787734663115",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-08-26T08:57:43+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-09-22",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "14:00",
+        "timeEnd": "17:00"
+      },
+      {
+        "date": "2026-09-22",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "19:00",
+        "timeEnd": "21:00"
+      }
+    ]
+  },
+  {
     "id": "okegawa-1787716496538",
     "type": "diff",
     "siteId": "okegawa",
@@ -24640,22 +24664,5 @@
       }
     ],
     "removed": []
-  },
-  {
-    "id": "ageo-1785618536713",
-    "type": "diff",
-    "siteId": "ageo",
-    "siteName": "上尾市公共施設予約システム",
-    "timestamp": "2026-08-01T21:08:56+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-08-30",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "18:00",
-        "timeEnd": "21:00"
-      }
-    ]
   }
 ]
