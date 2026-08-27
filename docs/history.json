@@ -1,5 +1,22 @@
 [
   {
+    "id": "okegawa-1787840982654",
+    "type": "diff",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-08-27T14:29:42+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-08-29",
+        "facilityName": "桶川サンアリーナ",
+        "roomName": "バドミントンコート",
+        "timeStart": "13:00",
+        "timeEnd": "15:00"
+      }
+    ]
+  },
+  {
     "id": "hasuda-1787801085255",
     "type": "diff",
     "siteId": "hasuda",
@@ -25299,22 +25316,5 @@
         "timeEnd": "21:00"
       }
     ]
-  },
-  {
-    "id": "okegawa-1785643098016",
-    "type": "diff",
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "timestamp": "2026-08-02T03:58:18+00:00",
-    "added": [
-      {
-        "date": "2026-09-06",
-        "facilityName": "桶川サンアリーナ",
-        "roomName": "バドミントンコート",
-        "timeStart": "11:00",
-        "timeEnd": "14:00"
-      }
-    ],
-    "removed": []
   }
 ]

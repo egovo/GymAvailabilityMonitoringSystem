@@ -1,23 +1,12 @@
 {
-  "generatedAt": "2026-08-27T03:26:03+00:00",
+  "generatedAt": "2026-08-27T14:32:15+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-08-27T03:20:44+00:00",
+      "checkedAt": "2026-08-27T14:29:42+00:00",
       "error": null,
       "results": [
-        {
-          "siteId": "okegawa",
-          "siteName": "桶川サンアリーナ",
-          "facilityName": "桶川サンアリーナ",
-          "roomName": "バドミントンコート",
-          "date": "2026-08-29",
-          "url": "https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=8&d_n=29",
-          "timeStart": "13:00",
-          "timeEnd": "15:00",
-          "durationMinutes": 120
-        },
         {
           "siteId": "okegawa",
           "siteName": "桶川サンアリーナ",
@@ -56,7 +45,7 @@
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-08-27T03:24:45+00:00",
+      "checkedAt": "2026-08-27T14:30:48+00:00",
       "error": null,
       "results": [
         {
@@ -1362,7 +1351,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-08-27T03:26:03+00:00",
+      "checkedAt": "2026-08-27T14:32:15+00:00",
       "error": null,
       "results": []
     }
