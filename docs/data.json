@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T03:18:03+00:00",
+  "generatedAt": "2026-08-29T10:09:24+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-08-29T03:12:16+00:00",
+      "checkedAt": "2026-08-29T10:06:45+00:00",
       "error": null,
       "results": [
         {
@@ -34,7 +34,7 @@
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-08-29T03:16:37+00:00",
+      "checkedAt": "2026-08-29T10:07:57+00:00",
       "error": null,
       "results": [
         {
@@ -42,39 +42,6 @@
           "siteName": "蓮田市公共施設予約・案内システム",
           "facilityName": "総合市民体育館パルシー",
           "roomName": "メインアリーナ１／２面Ｂ",
-          "date": "2026-09-13",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "17:00",
-          "timeEnd": "19:00",
-          "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ全面",
-          "date": "2026-09-13",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "17:00",
-          "timeEnd": "19:00",
-          "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ１／２面Ａ",
-          "date": "2026-09-13",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "17:00",
-          "timeEnd": "19:00",
-          "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ１／２面Ｂ",
           "date": "2026-09-13",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "17:00",
@@ -1439,7 +1406,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-08-29T03:18:03+00:00",
+      "checkedAt": "2026-08-29T10:09:24+00:00",
       "error": null,
       "results": []
     }
