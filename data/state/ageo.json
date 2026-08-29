@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+    "roomName": "アリーナ",
+    "date": "2026-09-05",
+    "url": "https://www.pf-yoyaku.com/User/ageo/Home",
+    "timeStart": "15:00",
+    "timeEnd": "18:00",
+    "durationMinutes": 180
+  }
+]
