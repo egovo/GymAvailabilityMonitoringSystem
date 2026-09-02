@@ -1,5 +1,57 @@
 [
   {
+    "id": "hasuda-1788346131191",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-09-02T10:48:51+00:00",
+    "added": [
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ全面",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ａ",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ全面",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ａ",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      },
+      {
+        "date": "2026-11-29",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "17:00",
+        "timeEnd": "21:30"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "hasuda-1788311285342",
     "type": "diff",
     "siteId": "hasuda",
@@ -29731,14 +29783,6 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "timestamp": "2026-08-05T19:05:17+00:00",
-    "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設案内・予約')\n"
-  },
-  {
-    "id": "hasuda-1785949984652",
-    "type": "error",
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "timestamp": "2026-08-05T17:13:04+00:00",
     "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設案内・予約')\n"
   }
 ]
