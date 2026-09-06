@@ -1,5 +1,43 @@
 [
   {
+    "id": "hasuda-1788674589651",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-09-06T06:03:09+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-09-06",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-19",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "11:00",
+        "timeEnd": "13:00"
+      },
+      {
+        "date": "2026-09-19",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "15:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-19",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "15:00",
+        "timeEnd": "17:00"
+      }
+    ]
+  },
+  {
     "id": "hasuda-1788657572831",
     "type": "diff",
     "siteId": "hasuda",
@@ -31844,23 +31882,6 @@
         "roomName": "アリーナ",
         "timeStart": "12:00",
         "timeEnd": "15:00"
-      }
-    ]
-  },
-  {
-    "id": "hasuda-1786085369876",
-    "type": "diff",
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "timestamp": "2026-08-07T06:49:29+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-08-08",
-        "facilityName": "農業者トレーニングセンター",
-        "roomName": "多目的ホール（片面Ａ・ステージあり）",
-        "timeStart": "14:00",
-        "timeEnd": "18:00"
       }
     ]
   }
