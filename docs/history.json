@@ -1,5 +1,46 @@
 [
   {
+    "id": "okegawa-1789821258665",
+    "type": "diff",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-09-19T12:34:18+00:00",
+    "added": [
+      {
+        "date": "2026-09-22",
+        "facilityName": "桶川サンアリーナ",
+        "roomName": "バドミントンコート",
+        "timeStart": "09:00",
+        "timeEnd": "11:00"
+      }
+    ],
+    "removed": []
+  },
+  {
+    "id": "hasuda-1789821329087",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-09-19T12:35:29+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-09-19",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ａ・ステージあり）",
+        "timeStart": "16:00",
+        "timeEnd": "18:00"
+      },
+      {
+        "date": "2026-09-20",
+        "facilityName": "農業者トレーニングセンター",
+        "roomName": "多目的ホール（片面Ｂ）",
+        "timeStart": "10:00",
+        "timeEnd": "12:00"
+      }
+    ]
+  },
+  {
     "id": "okegawa-1789805744905",
     "type": "diff",
     "siteId": "okegawa",
