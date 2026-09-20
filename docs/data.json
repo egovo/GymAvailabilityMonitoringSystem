@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-20T06:21:24+00:00",
+  "generatedAt": "2026-09-20T11:47:49+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-09-20T06:18:52+00:00",
+      "checkedAt": "2026-09-20T11:44:59+00:00",
       "error": null,
       "results": [
         {
@@ -23,42 +23,9 @@
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-09-20T06:20:01+00:00",
+      "checkedAt": "2026-09-20T11:46:08+00:00",
       "error": null,
       "results": [
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ全面",
-          "date": "2026-09-20",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "11:00",
-          "timeEnd": "21:30",
-          "durationMinutes": 630
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ１／２面Ａ",
-          "date": "2026-09-20",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "11:00",
-          "timeEnd": "21:30",
-          "durationMinutes": 630
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ１／２面Ｂ",
-          "date": "2026-09-20",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "11:00",
-          "timeEnd": "21:30",
-          "durationMinutes": 630
-        },
         {
           "siteId": "hasuda",
           "siteName": "蓮田市公共施設予約・案内システム",
@@ -955,7 +922,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-09-20T06:21:24+00:00",
+      "checkedAt": "2026-09-20T11:47:49+00:00",
       "error": null,
       "results": []
     }
