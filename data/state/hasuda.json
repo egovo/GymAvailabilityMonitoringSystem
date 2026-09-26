@@ -69,28 +69,6 @@
     "siteId": "hasuda",
     "siteName": "蓮田市公共施設予約・案内システム",
     "facilityName": "総合市民体育館パルシー",
-    "roomName": "サブアリーナ全面",
-    "date": "2026-10-04",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "12:00",
-    "timeEnd": "17:00",
-    "durationMinutes": 300
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
-    "roomName": "サブアリーナ１／２面Ａ",
-    "date": "2026-10-04",
-    "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-    "timeStart": "12:00",
-    "timeEnd": "17:00",
-    "durationMinutes": 300
-  },
-  {
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "facilityName": "総合市民体育館パルシー",
     "roomName": "メインアリーナ１／２面Ｂ",
     "date": "2026-10-12",
     "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
