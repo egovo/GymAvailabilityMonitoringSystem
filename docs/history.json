@@ -1,5 +1,39 @@
 [
   {
+    "id": "hasuda-1790846516150",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-10-01T09:21:56+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-11-23",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "メインアリーナ１／２面Ｂ",
+        "timeStart": "19:00",
+        "timeEnd": "21:30"
+      }
+    ]
+  },
+  {
+    "id": "ageo-1790846659388",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-10-01T09:24:19+00:00",
+    "added": [
+      {
+        "date": "2026-10-04",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "18:00",
+        "timeEnd": "21:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "hasuda-1790821956653",
     "type": "diff",
     "siteId": "hasuda",

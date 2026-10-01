@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-01T02:34:13+00:00",
+  "generatedAt": "2026-10-01T09:24:19+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-10-01T02:28:55+00:00",
+      "checkedAt": "2026-10-01T09:20:44+00:00",
       "error": null,
       "results": []
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-10-01T02:32:36+00:00",
+      "checkedAt": "2026-10-01T09:21:56+00:00",
       "error": null,
       "results": [
         {
@@ -350,17 +350,6 @@
           "facilityName": "総合市民体育館パルシー",
           "roomName": "メインアリーナ１／２面Ｂ",
           "date": "2026-11-22",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "19:00",
-          "timeEnd": "21:30",
-          "durationMinutes": 150
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "メインアリーナ１／２面Ｂ",
-          "date": "2026-11-23",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "19:00",
           "timeEnd": "21:30",
@@ -1020,9 +1009,21 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-10-01T02:34:13+00:00",
+      "checkedAt": "2026-10-01T09:24:19+00:00",
       "error": null,
-      "results": []
+      "results": [
+        {
+          "siteId": "ageo",
+          "siteName": "上尾市公共施設予約システム",
+          "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+          "roomName": "アリーナ",
+          "date": "2026-10-04",
+          "url": "https://www.pf-yoyaku.com/User/ageo/Home",
+          "timeStart": "18:00",
+          "timeEnd": "21:00",
+          "durationMinutes": 180
+        }
+      ]
     }
   ]
 }
