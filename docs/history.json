@@ -1,5 +1,22 @@
 [
   {
+    "id": "hasuda-1791031641600",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-10-03T12:47:21+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-10-03",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "18:00",
+        "timeEnd": "21:30"
+      }
+    ]
+  },
+  {
     "id": "hasuda-1791013406761",
     "type": "diff",
     "siteId": "hasuda",
@@ -24440,23 +24457,6 @@
         "roomName": "多目的ホール（片面Ｂ）",
         "timeStart": "15:00",
         "timeEnd": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "okegawa-1788434451638",
-    "type": "diff",
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "timestamp": "2026-09-03T11:20:51+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-09-27",
-        "facilityName": "桶川サンアリーナ",
-        "roomName": "バドミントンコート",
-        "timeStart": "09:00",
-        "timeEnd": "11:00"
       }
     ]
   }
