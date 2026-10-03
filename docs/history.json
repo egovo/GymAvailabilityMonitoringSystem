@@ -1,5 +1,22 @@
 [
   {
+    "id": "hasuda-1791013406761",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-10-03T07:43:26+00:00",
+    "added": [
+      {
+        "date": "2026-10-03",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "18:00",
+        "timeEnd": "21:30"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "hasuda-1790992569065",
     "type": "diff",
     "siteId": "hasuda",
