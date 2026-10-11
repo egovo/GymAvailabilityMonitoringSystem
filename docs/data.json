@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-11T02:19:30+00:00",
+  "generatedAt": "2026-10-11T09:00:04+00:00",
   "sites": [
     {
       "id": "okegawa",
       "name": "桶川サンアリーナ",
-      "checkedAt": "2026-10-11T02:14:00+00:00",
+      "checkedAt": "2026-10-11T08:57:23+00:00",
       "error": null,
       "results": []
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-10-11T02:17:43+00:00",
+      "checkedAt": "2026-10-11T08:58:39+00:00",
       "error": null,
       "results": [
         {
@@ -404,17 +404,6 @@
           "siteName": "蓮田市公共施設予約・案内システム",
           "facilityName": "農業者トレーニングセンター",
           "roomName": "多目的ホール（片面Ａ・ステージあり）",
-          "date": "2026-10-17",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "11:00",
-          "timeEnd": "13:00",
-          "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "農業者トレーニングセンター",
-          "roomName": "多目的ホール（片面Ａ・ステージあり）",
           "date": "2026-10-18",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "11:00",
@@ -623,6 +612,17 @@
           "siteId": "hasuda",
           "siteName": "蓮田市公共施設予約・案内システム",
           "facilityName": "農業者トレーニングセンター",
+          "roomName": "多目的ホール（片面Ａ・ステージあり）",
+          "date": "2026-11-21",
+          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+          "timeStart": "16:00",
+          "timeEnd": "18:00",
+          "durationMinutes": 120
+        },
+        {
+          "siteId": "hasuda",
+          "siteName": "蓮田市公共施設予約・案内システム",
+          "facilityName": "農業者トレーニングセンター",
           "roomName": "多目的ホール（片面Ｂ）",
           "date": "2026-11-15",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
@@ -822,7 +822,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-10-11T02:19:30+00:00",
+      "checkedAt": "2026-10-11T09:00:04+00:00",
       "error": null,
       "results": []
     }
