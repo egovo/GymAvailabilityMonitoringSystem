@@ -1,5 +1,13 @@
 [
   {
+    "id": "okegawa-1792709991172",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-10-22T22:59:51+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=10&d_n=24"
+  },
+  {
     "id": "okegawa-1792699096001",
     "type": "error",
     "siteId": "okegawa",
