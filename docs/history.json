@@ -1,5 +1,13 @@
 [
   {
+    "id": "okegawa-1792937864782",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-10-25T14:17:44+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=10&d_n=25"
+  },
+  {
     "id": "okegawa-1792922475439",
     "type": "error",
     "siteId": "okegawa",
@@ -19932,23 +19940,6 @@
         "roomName": "多目的ホール（片面Ｂ）",
         "timeStart": "09:00",
         "timeEnd": "18:00"
-      }
-    ]
-  },
-  {
-    "id": "hasuda-1790335243601",
-    "type": "diff",
-    "siteId": "hasuda",
-    "siteName": "蓮田市公共施設予約・案内システム",
-    "timestamp": "2026-09-25T11:20:43+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-11-22",
-        "facilityName": "農業者トレーニングセンター",
-        "roomName": "多目的ホール（片面Ｂ）",
-        "timeStart": "11:00",
-        "timeEnd": "13:00"
       }
     ]
   }
