@@ -1,5 +1,30 @@
 [
   {
+    "id": "okegawa-1792960066849",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-10-25T20:27:46+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=10&d_n=25"
+  },
+  {
+    "id": "ageo-1792960262442",
+    "type": "diff",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-10-25T20:31:02+00:00",
+    "added": [
+      {
+        "date": "2026-11-14",
+        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
+        "roomName": "アリーナ",
+        "timeStart": "12:00",
+        "timeEnd": "15:00"
+      }
+    ],
+    "removed": []
+  },
+  {
     "id": "okegawa-1792950380303",
     "type": "error",
     "siteId": "okegawa",
