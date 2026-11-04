@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T17:53:28+00:00",
+  "generatedAt": "2026-11-04T23:20:04+00:00",
   "sites": [
     {
       "id": "okegawa",
@@ -41,12 +41,12 @@
           "durationMinutes": 120
         }
       ],
-      "lastErrorAt": "2026-11-04T17:49:15+00:00"
+      "lastErrorAt": "2026-11-04T23:17:13+00:00"
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-11-04T17:52:10+00:00",
+      "checkedAt": "2026-11-04T23:18:19+00:00",
       "error": null,
       "results": [
         {
@@ -582,7 +582,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-11-04T17:53:28+00:00",
+      "checkedAt": "2026-11-04T23:20:04+00:00",
       "error": null,
       "results": []
     }
