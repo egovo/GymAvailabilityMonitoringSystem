@@ -1,5 +1,30 @@
 [
   {
+    "id": "okegawa-1794057955934",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-11-07T13:25:55+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=11&d_n=7"
+  },
+  {
+    "id": "hasuda-1794058023821",
+    "type": "diff",
+    "siteId": "hasuda",
+    "siteName": "蓮田市公共施設予約・案内システム",
+    "timestamp": "2026-11-07T13:27:03+00:00",
+    "added": [],
+    "removed": [
+      {
+        "date": "2026-11-07",
+        "facilityName": "総合市民体育館パルシー",
+        "roomName": "サブアリーナ１／２面Ｂ",
+        "timeStart": "19:00",
+        "timeEnd": "21:30"
+      }
+    ]
+  },
+  {
     "id": "okegawa-1794032654351",
     "type": "error",
     "siteId": "okegawa",
