@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T07:23:57+00:00",
+  "generatedAt": "2026-11-08T14:29:12+00:00",
   "sites": [
     {
       "id": "okegawa",
@@ -41,25 +41,14 @@
           "durationMinutes": 120
         }
       ],
-      "lastErrorAt": "2026-11-08T07:21:05+00:00"
+      "lastErrorAt": "2026-11-08T14:26:36+00:00"
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-11-08T07:22:12+00:00",
+      "checkedAt": "2026-11-08T14:27:48+00:00",
       "error": null,
       "results": [
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "総合市民体育館パルシー",
-          "roomName": "サブアリーナ１／２面Ｂ",
-          "date": "2026-11-08",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "16:00",
-          "timeEnd": "19:00",
-          "durationMinutes": 180
-        },
         {
           "siteId": "hasuda",
           "siteName": "蓮田市公共施設予約・案内システム",
@@ -262,11 +251,33 @@
           "siteId": "hasuda",
           "siteName": "蓮田市公共施設予約・案内システム",
           "facilityName": "農業者トレーニングセンター",
+          "roomName": "多目的ホール（片面Ａ・ステージあり）",
+          "date": "2026-11-21",
+          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+          "timeStart": "18:00",
+          "timeEnd": "21:00",
+          "durationMinutes": 180
+        },
+        {
+          "siteId": "hasuda",
+          "siteName": "蓮田市公共施設予約・案内システム",
+          "facilityName": "農業者トレーニングセンター",
           "roomName": "多目的ホール（片面Ｂ）",
           "date": "2026-11-15",
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "15:00",
           "timeEnd": "18:00",
+          "durationMinutes": 180
+        },
+        {
+          "siteId": "hasuda",
+          "siteName": "蓮田市公共施設予約・案内システム",
+          "facilityName": "農業者トレーニングセンター",
+          "roomName": "多目的ホール（片面Ｂ）",
+          "date": "2026-11-21",
+          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
+          "timeStart": "18:00",
+          "timeEnd": "21:00",
           "durationMinutes": 180
         },
         {
@@ -472,7 +483,7 @@
     {
       "id": "ageo",
       "name": "上尾市公共施設予約システム",
-      "checkedAt": "2026-11-08T07:23:57+00:00",
+      "checkedAt": "2026-11-08T14:29:12+00:00",
       "error": null,
       "results": []
     }
