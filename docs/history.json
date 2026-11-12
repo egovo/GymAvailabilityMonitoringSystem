@@ -1,5 +1,21 @@
 [
   {
+    "id": "okegawa-1794470893670",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-11-12T08:08:13+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=11&d_n=14"
+  },
+  {
+    "id": "ageo-1794471029756",
+    "type": "error",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-11-12T08:10:29+00:00",
+    "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設種類から探す')\n"
+  },
+  {
     "id": "okegawa-1794445103598",
     "type": "error",
     "siteId": "okegawa",
@@ -21899,40 +21915,6 @@
         "roomName": "多目的ホール（片面Ｂ）",
         "timeStart": "15:00",
         "timeEnd": "17:00"
-      }
-    ]
-  },
-  {
-    "id": "ageo-1791908764557",
-    "type": "diff",
-    "siteId": "ageo",
-    "siteName": "上尾市公共施設予約システム",
-    "timestamp": "2026-10-13T16:26:04+00:00",
-    "added": [
-      {
-        "date": "2026-10-18",
-        "facilityName": "自動車精工　上尾市民体育館（市民体育館）",
-        "roomName": "アリーナ",
-        "timeStart": "18:00",
-        "timeEnd": "21:00"
-      }
-    ],
-    "removed": []
-  },
-  {
-    "id": "okegawa-1791855277095",
-    "type": "diff",
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "timestamp": "2026-10-13T01:34:37+00:00",
-    "added": [],
-    "removed": [
-      {
-        "date": "2026-10-12",
-        "facilityName": "桶川サンアリーナ",
-        "roomName": "バドミントンコート",
-        "timeStart": "11:00",
-        "timeEnd": "16:00"
       }
     ]
   }
