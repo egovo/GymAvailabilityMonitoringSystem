@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T04:36:31+00:00",
+  "generatedAt": "2026-11-19T13:58:15+00:00",
   "sites": [
     {
       "id": "okegawa",
@@ -41,12 +41,12 @@
           "durationMinutes": 120
         }
       ],
-      "lastErrorAt": "2026-11-19T04:31:58+00:00"
+      "lastErrorAt": "2026-11-19T13:56:05+00:00"
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-11-19T04:35:25+00:00",
+      "checkedAt": "2026-11-19T13:57:09+00:00",
       "error": null,
       "results": [
         {
@@ -157,17 +157,6 @@
           "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
           "timeStart": "17:00",
           "timeEnd": "19:00",
-          "durationMinutes": 120
-        },
-        {
-          "siteId": "hasuda",
-          "siteName": "蓮田市公共施設予約・案内システム",
-          "facilityName": "農業者トレーニングセンター",
-          "roomName": "多目的ホール（片面Ｂ）",
-          "date": "2026-11-22",
-          "url": "https://www.task-asp.net/cu/eg/ykr112381.task",
-          "timeStart": "09:00",
-          "timeEnd": "11:00",
           "durationMinutes": 120
         },
         {
@@ -376,7 +365,7 @@
       "checkedAt": "2026-11-09T09:51:22+00:00",
       "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設種類から探す')\n",
       "results": [],
-      "lastErrorAt": "2026-11-19T04:36:31+00:00"
+      "lastErrorAt": "2026-11-19T13:58:15+00:00"
     }
   ]
 }
