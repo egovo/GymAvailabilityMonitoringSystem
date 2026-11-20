@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T03:03:56+00:00",
+  "generatedAt": "2026-11-20T11:19:13+00:00",
   "sites": [
     {
       "id": "okegawa",
@@ -41,12 +41,12 @@
           "durationMinutes": 120
         }
       ],
-      "lastErrorAt": "2026-11-20T02:59:18+00:00"
+      "lastErrorAt": "2026-11-20T11:17:00+00:00"
     },
     {
       "id": "hasuda",
       "name": "蓮田市公共施設予約・案内システム",
-      "checkedAt": "2026-11-20T03:02:50+00:00",
+      "checkedAt": "2026-11-20T11:18:07+00:00",
       "error": null,
       "results": [
         {
@@ -365,7 +365,7 @@
       "checkedAt": "2026-11-09T09:51:22+00:00",
       "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設種類から探す')\n",
       "results": [],
-      "lastErrorAt": "2026-11-20T03:03:56+00:00"
+      "lastErrorAt": "2026-11-20T11:19:13+00:00"
     }
   ]
 }
