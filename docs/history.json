@@ -1,5 +1,21 @@
 [
   {
+    "id": "okegawa-1795790707104",
+    "type": "error",
+    "siteId": "okegawa",
+    "siteName": "桶川サンアリーナ",
+    "timestamp": "2026-11-27T14:45:07+00:00",
+    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=11&d_n=28"
+  },
+  {
+    "id": "ageo-1795790842629",
+    "type": "error",
+    "siteId": "ageo",
+    "siteName": "上尾市公共施設予約システム",
+    "timestamp": "2026-11-27T14:47:22+00:00",
+    "message": "page.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('text=施設種類から探す')\n"
+  },
+  {
     "id": "okegawa-1795755376383",
     "type": "error",
     "siteId": "okegawa",
@@ -16979,21 +16995,5 @@
         "timeEnd": "18:00"
       }
     ]
-  },
-  {
-    "id": "okegawa-1793745136096",
-    "type": "error",
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "timestamp": "2026-11-03T22:32:16+00:00",
-    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=11&d_n=3"
-  },
-  {
-    "id": "okegawa-1793727334864",
-    "type": "error",
-    "siteId": "okegawa",
-    "siteName": "桶川サンアリーナ",
-    "timestamp": "2026-11-03T17:35:34+00:00",
-    "message": "[okegawa] ページ取得失敗: https://okegawa-sunarena.or.jp/okesun/akijyou/index2.php?y_n=2026&m_n=11&d_n=3"
   }
 ]
